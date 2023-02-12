@@ -1,0 +1,55 @@
+
+<!--First section-->
+
+<style>
+
+.start-button {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 20px 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 40px;
+        display: inline-block;
+      }
+</style>
+<div style="background-image: url('firstPage.jpg');border-radius: 50%;
+background-size: cover; height:480px; padding-top: 80px; text-align: center;background-repeat: no-repeat;width: 100%;height: 700px;">
+  <img src="firstPage.jpg" style="height:150px; border-radius: 50%; border: 10px solid #FEDE00;margin-right: auto;">
+  <h1 id="greeting" style="font-size:100px; color:rgba(233, 12, 112, 0.912); margin:10px;"></h1>
+  <h1 style="font-size:100px; color:rgb(217, 20, 223); margin:10px;">Welcome to your World!!</h1>
+  <p style="font-size: 20px; color:#1F9AFE;"><a href="message.html" class= "start-button" style="background-color: aqua;">Let's Start</a></p>
+  
+  
+</div>
+
+  <script>
+    // Get the current hour
+   
+    var date = new Date();
+    var currentHour = date.getHours();
+
+    // Select the appropriate greeting based on the current hour
+    var greeting;
+    if (currentHour >= 5 && currentHour < 12) {
+      greeting = "Good Morning";
+    } else if (currentHour >= 12 && currentHour < 17) {
+      greeting = "Good Afternoon";
+    } else if (currentHour >= 17 || currentHour < 5) {
+      greeting = "Good Evening";
+    }
+
+    // Update the greeting in the HTML
+    document.getElementById("greeting").innerHTML = greeting + " Ana,";
+
+
+   /* function playAudio(event) {
+    event.preventDefault();
+    var audio = document.getElementById("audio");
+    audio.play();
+   
+      window.location.href = event.target.href;
+    
+  }*/
+    
+  </script>

@@ -1,0 +1,80 @@
+    <html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="wishstyle.css">
+    <title>Wish website</title>
+    
+    </head>
+
+
+    <body class="w3-white">
+        <!-- Content container -->
+        <div class="container">
+
+        <!-- Image and name container. Change to your picture here. -->
+        <div class="image-container">
+        <img src="wishpic.jpg" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%; alt=">
+        <div class="w3-text-white">
+        <p class="w3-text-white w3-large">Welcome to <span class="w3-tag w3-large w3-round w3-black w3-text-white"><strong>Ana's</strong></span> wish site!</p>
+        <p class="w3-large"><strong>See what you are up to today.</strong></p>
+        </div>
+
+        <!-- Links section 1. Replace the # inside of the "" with your links. -->
+        <div class="links-container">
+            <button id="play-pause-song" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border" >Play my Song</button>
+           
+            <audio id="music" src="ranjhana.mp3"></audio>
+            <div id="message1" style="display: none;"></div>
+            
+        <br>
+        <button id="see-our-pic" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border" >See our Pic</button>
+        <br>
+        <button id="send-hug-button" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border">Send a Hug</button>
+        <img id="hug-gif" style="display: none;" src="hugGif.gif" alt="Animated Hug">
+
+        <br>
+        <button id="valentineBtn" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border" >See my Valentine Message</button>
+        <br>
+        
+        <button id="LoveBtn" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border" >My First Love</button>
+
+<div id="myLoveModal" class="Lovemodal">
+  <div class="Love-modal-content">
+    <span class="Loveclose">&times;</span>
+    <video id="myVideo" controls>
+      <source src="Baba.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+        <br><br>
+        <a href="index.html" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border">END</a>
+        <div id="messagePopup" class="hidden">
+    <div id="messageContent">
+        <p id="messageText"></p>
+        <img id="messageImage" src="Heart.png" alt="heart">
+    </div>
+    <button id="closeBtn" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border">Close</button>
+    <audio id="messageAudio" src="NazmSHort.mp3"></audio>
+    </div>
+        </div>
+    </div>
+    </div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" class="w3-hover-pink w3-large w3-round w3-purple w3-border">Close</span>
+    <div id="messagemodal">Click on the Pic</div>
+    <img id="picture" src="img1.jpg">
+  </div>
+</div>
+
+
+
+    <script src="wishjs.js"></script>
+
+
+    </body>  
+    </html>
